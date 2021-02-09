@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- JOB CONFIG -->
+	<property>
+		<name>process-id</name>
+		<value>RELATORIO_HIERARQUIA</value>
+	</property>
+
+	<!-- MAPREDUCE -->
+	<property>
+		<name>mapreduce.job.name</name>
+		<value>${process-id}</value>
+	</property>
+
+	
+	<!-- JOB INPUTS -->
+	<property>
+		<name>working</name>
+		<value>${environment}/IdeaProjects/arquivos</value>
+		<description></description>
+	</property>
+
+	<property>
+		<name>responsavel-fact-input</name>
+		<value>${working}/input/responsavel/</value>
+		<description>responsavel</description>
+	</property>
+
+	<property>
+		<name>login-fact-input</name>
+		<value>${working}/input/login/</value>
+		<description>login</description>
+	</property>
+	
+	<!-- JOB OUTPUT PATHS -->
+
+	<property>
+		<name>responsavel-fact-output</name>
+		<value>${working}/output/responsavel/</value>
+		<description>responsavel</description>
+	</property>
+
+	<property>
+		<name>login-fact-output</name>
+		<value>${working}/output/login/</value>
+		<description>login</description>
+	</property>
+
+</configuration>
